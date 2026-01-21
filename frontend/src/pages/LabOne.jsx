@@ -18,9 +18,13 @@ function LabOne() {
     <div>
 
       <div style={{ width: "70%", margin: "60px auto" }}>
-        <h1>Welcome to your profile <span style={{ color: "yellowgreen" }}>{profile?.username}</span></h1>
+        <div style={{display: "flex", justifyContent: "space-between", width: "100%", alignItems: "center", padding: "20px"}}>
+          <h1>Welcome to your profile <span style={{ color: "yellowgreen" }}>{profile?.username}</span></h1>
+          
+        </div>
         {profile && (
-          <div style={{ marginTop: "2rem", border: "1px solid lightblue", width: "100%", padding: "20px", borderRadius: "10px", fontSize: "22px" }}>
+          <div style={{ border: "1px solid lightblue", width: "100%", padding: "20px", borderRadius: "10px", fontSize: "22px" }}>
+            
             <p><strong>Email:</strong> {profile.email}</p>
             <hr />
             <p><strong>Role:</strong> {profile.role}</p>
@@ -47,6 +51,7 @@ function LabOne() {
                 <pre>{JSON.stringify(profile.secrets, null, 2)}</pre>
               </>
             )}
+            <button>Update Profile</button>
           </div>
         )}
       </div>

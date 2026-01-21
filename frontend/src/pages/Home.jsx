@@ -8,8 +8,8 @@ const LinkItem = (props) => {
 const Home = () => {
   return (
     <div style={{display: "flex", justifyContent: "space-between", width: "600px", margin: "200px auto"}}>
-      <LinkItem to="/lab-one/1" text="Lab 1"/>
-      <LinkItem to="/lab-two" text="Lab 2"/>
+      {/* <LinkItem to="/lab-one/1" text="Lab 1"/> */}
+      <LinkItem to="/update-profile" text="Profile"/>
     </div>
   )
 }

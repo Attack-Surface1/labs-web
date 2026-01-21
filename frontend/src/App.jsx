@@ -4,6 +4,7 @@ import "./App.css"
 import Navbar from "./components/Navbar"
 import LabOne from "./pages/LabOne"
 import LabTwo from "./pages/LabTwo"
+import UpdateProfile from "./pages/UpdateProfile"
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/lab-one/:id" element={<LabOne />} />
-        <Route path="/lab-two" element={<LabTwo />} />
+        <Route path="/update-profile" element={<UpdateProfile/>} />
       </Routes>
     </div>
   )
